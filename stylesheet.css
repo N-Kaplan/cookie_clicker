@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 button {
     display: inline-block;
     padding: 15px 25px;
@@ -10,7 +16,7 @@ button {
     background-color: indianred;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 3px 9px #999;
 }
 
 button:hover {background-color: darkred}
@@ -20,6 +26,19 @@ button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+button.blue {
+    background-color: #393eb9;
+}
+
+button.blue:hover {background-color: darkblue}
+
+button.green {
+    background-color: #96cd5c;
+}
+
+button.green:hover {background-color: darkgreen}
+
 .container {
     display: grid;
     grid-template-columns: 400px 600px 400px;
@@ -32,3 +51,4 @@ button:active {
     height: 750px;
     margin: 5px;
     background-color: #cccccc;
+}
