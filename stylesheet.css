@@ -49,9 +49,18 @@ button.green:hover {background-color: darkgreen}
 .column {
     padding: 16px;
     height: 750px;
-    margin: 5px;
+    margin: 10px;
     background-color: #cccccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 h1 {
     text-align: center;
+    color: dimgrey;
+}
+
+p.solid {border-style: solid;
+    padding: 16px;
+    border-radius: 10px;
+    color: dimgrey;
 }
