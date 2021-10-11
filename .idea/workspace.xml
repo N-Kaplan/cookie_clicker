@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="linked stylesheet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="added multipliers">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
     </list>
@@ -27,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1zLoVWSuqom3GZliwS1s5hiokAq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -85,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="linked stylesheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="linked stylesheet" />
+    <MESSAGE value="added multipliers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added multipliers" />
   </component>
 </project>
