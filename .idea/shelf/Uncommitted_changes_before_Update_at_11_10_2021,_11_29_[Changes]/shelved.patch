@@ -1,0 +1,64 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"stylesheet\" href=\"stylesheet.css\">\n    <title>Cookie clicker</title>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"column\">\n            <h2> Counter</h2>\n            <p> 0 cookies</p>\n            <!--- a counter should be added instead off <p> --->\n            <button id=\"cookie\">I am a cookie!</button>\n        </div>\n        <div class=\"column\">\n            <h2> Multipliers</h2>\n            <p> These are the multipliers currently active.</p>\n            <!--- what is bought from the store should be displayed here --->\n        </div>\n        <div class=\"column\">\n            <h2> Store </h2>\n            <p> Cursor: autoclicks every 10 seconds.\n                <br>Grandma: a nice grandma to bake more cookies.\n                <br>Farm: grows cookieplants from cookieseeds.</p>\n            <!--- multipliers should be bought from here and be deactivated if the player doesn't have enough cookies --->\n        </div>\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 869b490aa5aa3a4508cd000d76a874b499909789)
++++ b/index.html	(date 1633942627470)
+@@ -10,7 +10,7 @@
+         <div class="column">
+             <h2> Counter</h2>
+             <p> 0 cookies</p>
+-            <!--- a counter should be added instead off <p> --->
++            <!--- a counter should be added instead of <p> --->
+             <button id="cookie">I am a cookie!</button>
+         </div>
+         <div class="column">
+@@ -25,5 +25,6 @@
+                 <br>Farm: grows cookieplants from cookieseeds.</p>
+             <!--- multipliers should be bought from here and be deactivated if the player doesn't have enough cookies --->
+         </div>
++    </div>
+ </body>
+ </html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08052397-66b2-4420-a6b0-7610778b7214\" name=\"Changes\" comment=\"linked stylesheet\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/stylesheet.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/stylesheet.css\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n        <option value=\"CSS File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1zLoVWSuqom3GZliwS1s5hiokAq\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File\" value=\"GitIgnore\" />\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08052397-66b2-4420-a6b0-7610778b7214\" name=\"Changes\" comment=\"\" />\n      <created>1633936755485</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1633936755485</updated>\n      <workItem from=\"1633936757960\" duration=\"1563000\" />\n      <workItem from=\"1633938465437\" duration=\"3216000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"linked stylesheet\">\n      <created>1633939224296</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633939224297</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"linked stylesheet\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"linked stylesheet\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 869b490aa5aa3a4508cd000d76a874b499909789)
++++ b/.idea/workspace.xml	(date 1633944572816)
+@@ -7,7 +7,6 @@
+     <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="linked stylesheet">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -28,6 +27,9 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="ProblemsViewState">
++    <option name="selectedIndex" value="1" />
++  </component>
+   <component name="ProjectId" id="1zLoVWSuqom3GZliwS1s5hiokAq" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -57,7 +59,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1633936755485</updated>
+       <workItem from="1633936757960" duration="1563000" />
+-      <workItem from="1633938465437" duration="3216000" />
++      <workItem from="1633938465437" duration="4990000" />
+     </task>
+     <task id="LOCAL-00001" summary="linked stylesheet">
+       <created>1633939224296</created>

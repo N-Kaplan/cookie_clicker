@@ -1,0 +1,113 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"stylesheet\" href=\"stylesheet.css\">\n    <title>Cookie clicker</title>\n</head>\n<body>\n<<<<<<< HEAD\n<<<<<<< HEAD\n=======\n>>>>>>> 25ec74e1f69a5c7aabb5ed4bfea70d89e1746359\n    <div class=\"container\">\n        <div class=\"column\">\n            <h2> Counter</h2>\n            <p id=\"score_display\">0</p>\n            <button id=\"cookie\">I am a cookie!</button>\n        </div>\n        <div class=\"column\">\n            <h2> Multipliers</h2>\n            <p> These are the multipliers currently active.</p>\n            <!--- what is bought from the store should be displayed here --->\n        </div>\n        <div class=\"column\">\n            <h2> Store </h2>\n            <p> Cursor: autoclicks every 10 seconds.\n                <br>Grandma: a nice grandma to bake more cookies.\n                <br>Farm: grows cookieplants from cookieseeds.</p>\n                <button id=\"purchase_multiplier\">100 cookies for a multiplier</button>\n                <p id=\"purchase_display\"></p>\n            <!--- multipliers should be bought from here and be deactivated if the player doesn't have enough cookies --->\n<<<<<<< HEAD\n        </div>\n=======\n<button id=\"cookie\">Cookie</button>\n<p id=\"score_display\">0</p>\n\n<button id=\"purchase_multiplier\">100 cookies for a multiplier</button>\n<p id=\"purchase_display\"></p>\n\n\n<script src=\"script.js\"></script>\n>>>>>>> Naama\n=======\n        </div\n      <script src=\"script.js\"></script>\n>>>>>>> 25ec74e1f69a5c7aabb5ed4bfea70d89e1746359\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	
++++ b/index.html	
+@@ -6,10 +6,7 @@
+     <title>Cookie clicker</title>
+ </head>
+ <body>
+-<<<<<<< HEAD
+-<<<<<<< HEAD
+-=======
+->>>>>>> 25ec74e1f69a5c7aabb5ed4bfea70d89e1746359
++
+     <div class="container">
+         <div class="column">
+             <h2> Counter</h2>
+@@ -26,24 +23,20 @@
+             <p> Cursor: autoclicks every 10 seconds.
+                 <br>Grandma: a nice grandma to bake more cookies.
+                 <br>Farm: grows cookieplants from cookieseeds.</p>
+-                <button id="purchase_multiplier">100 cookies for a multiplier</button>
++                <button id="purchase_multiplier">10 cookies for a cursor</button>
++                <p id="purchase_display"></p>
++                <button id="purchase_grandma">100 cookies for a grandma</button>
++                <p id="purchase_display"></p>
++                <button id="purchase_farm">1000 cookies for a farm</button>
+                 <p id="purchase_display"></p>
+             <!--- multipliers should be bought from here and be deactivated if the player doesn't have enough cookies --->
+-<<<<<<< HEAD
++
+         </div>
+-=======
+-<button id="cookie">Cookie</button>
+-<p id="score_display">0</p>
+-
+-<button id="purchase_multiplier">100 cookies for a multiplier</button>
+-<p id="purchase_display"></p>
+-
+ 
+ <script src="script.js"></script>
+->>>>>>> Naama
+-=======
+-        </div
++
++        </div>
+       <script src="script.js"></script>
+->>>>>>> 25ec74e1f69a5c7aabb5ed4bfea70d89e1746359
++
+ </body>
+ </html>
+\ No newline at end of file
+Index: stylesheet.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>button {\n    display: inline-block;\n    padding: 15px 25px;\n    font-size: 24px;\n    cursor: pointer;\n    text-align: center;\n    text-decoration: none;\n    outline: none;\n    color: #fff;\n    background-color: indianred;\n    border: none;\n    border-radius: 15px;\n    box-shadow: 0 9px #999;\n}\n\nbutton:hover {background-color: darkred}\n\nbutton:active {\n    background-color: darkred;\n    box-shadow: 0 5px #666;\n    transform: translateY(4px);\n}\n.container {\n    display: grid;\n    grid-template-columns: 400px 600px 400px;\n    text-align: center;\n\n\n}\n.column {\n    padding: 16px;\n    height: 750px;\n    margin: 5px;\n    background-color: #cccccc;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/stylesheet.css b/stylesheet.css
+--- a/stylesheet.css	
++++ b/stylesheet.css	
+@@ -31,4 +31,5 @@
+     padding: 16px;
+     height: 750px;
+     margin: 5px;
+-    background-color: #cccccc;
+\ No newline at end of file
++    background-color: #cccccc;
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08052397-66b2-4420-a6b0-7610778b7214\" name=\"Changes\" comment=\"linked stylesheet\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/stylesheet.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/stylesheet.css\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n        <option value=\"CSS File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1zLoVWSuqom3GZliwS1s5hiokAq\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File\" value=\"GitIgnore\" />\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08052397-66b2-4420-a6b0-7610778b7214\" name=\"Changes\" comment=\"\" />\n      <created>1633936755485</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1633936755485</updated>\n      <workItem from=\"1633936757960\" duration=\"1563000\" />\n      <workItem from=\"1633938465437\" duration=\"3216000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"linked stylesheet\">\n      <created>1633939224296</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633939224297</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"linked stylesheet\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"linked stylesheet\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -7,6 +7,7 @@
+     <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="linked stylesheet">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -28,6 +29,9 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="ProblemsViewState">
++    <option name="selectedIndex" value="1" />
++  </component>
+   <component name="ProjectId" id="1zLoVWSuqom3GZliwS1s5hiokAq" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -57,7 +61,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1633936755485</updated>
+       <workItem from="1633936757960" duration="1563000" />
+-      <workItem from="1633938465437" duration="3216000" />
++      <workItem from="1633938465437" duration="7589000" />
+     </task>
+     <task id="LOCAL-00001" summary="linked stylesheet">
+       <created>1633939224296</created>

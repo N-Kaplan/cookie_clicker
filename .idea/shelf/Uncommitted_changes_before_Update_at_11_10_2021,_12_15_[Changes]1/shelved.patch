@@ -1,0 +1,51 @@
+Index: script.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const btn_c = document.getElementById(\"cookie\");\nconst display_score = document.getElementById('score_display');\nconst btn_m = document.getElementById(\"purchase_multiplier\");\nconst display_purchase = document.getElementById(\"purchase_display\");\n\nlet score = parseInt(display_score.textContent);\nconsole.log(score);\n\nbtn_c.addEventListener(\"click\", () => {\n    score++;\n    display_score.textContent = score.toString();\n})\n\n\nconst buy_cursor = () => {\n    if (score >= 10) {\n        score -= 10;\n        setInterval(multiplier, 10000)\n        display_purchase.textContent = 'cursor purchased';\n        btn_m.removeEventListener('click', buy_cursor);\n    } else {\n        display_purchase.textContent = 'bake more cookies first!'\n    }\n}\n\n\nconst multiplier = () => {\n    score++\n    console.log(score);\n    display_score.textContent = score.toString();\n};\n\nbtn_m.addEventListener(\"click\", buy_cursor);
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/script.js b/script.js
+--- a/script.js	
++++ b/script.js	
+@@ -3,6 +3,9 @@
+ const btn_m = document.getElementById("purchase_multiplier");
+ const display_purchase = document.getElementById("purchase_display");
+ 
++
++
++
+ let score = parseInt(display_score.textContent);
+ console.log(score);
+ 
+@@ -30,4 +33,27 @@
+     display_score.textContent = score.toString();
+ };
+ 
+-btn_m.addEventListener("click", buy_cursor);
+\ No newline at end of file
++btn_m.addEventListener("click", buy_cursor);
++/*
++const buy_grandma = () => {
++    if (score >= 100) {
++        score -= 100;
++        setInterval(multiplier, 100000)
++        display_purchase.textContent = 'grandma purchased';
++        btn_m.removeEventListener('click', buy_grandma);
++    } else {
++        display_purchase.textContent = 'bake more cookies first!'
++    }
++    btn_m.addEventListener("click", buy_grandma);
++
++    const buy_farm = () => {
++        if (score >= 1000) {
++            score -= 1000;
++            setInterval(multiplier, 10000)
++            display_purchase.textContent = 'farm purchased';
++            btn_m.removeEventListener('click', buy_farm);
++        } else {
++            display_purchase.textContent = 'bake more cookies first!'
++        }
++        btn_m.addEventListener("click", buy_farm);
++}*/
+\ No newline at end of file
