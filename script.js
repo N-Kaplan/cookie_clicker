@@ -1,6 +1,6 @@
 const btn_c = document.getElementById("cookie");
 const display_score = document.getElementById('score_display');
-const btn_m = document.getElementById("purchase_multiplier");
+const btn_m = document.getElementById("purchase_cursor");
 const display_purchase = document.getElementById("purchase_display");
 
 
