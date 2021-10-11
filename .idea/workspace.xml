@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="added multipliers">
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="Added explanations">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633947578351</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added multipliers">
+      <created>1633953313136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633953313138</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added explanations">
+      <created>1633956137730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633956137731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="linked stylesheet" />
     <MESSAGE value="added multipliers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added multipliers" />
+    <MESSAGE value="Added explanations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added explanations" />
   </component>
 </project>

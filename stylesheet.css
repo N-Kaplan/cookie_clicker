@@ -52,4 +52,6 @@ button.green:hover {background-color: darkgreen}
     margin: 5px;
     background-color: #cccccc;
 }
+h1 {
+    text-align: center;
 }
