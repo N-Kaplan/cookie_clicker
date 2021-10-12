@@ -1,0 +1,96 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"stylesheet\" href=\"stylesheet.css\">\n    <title>Cookie clicker</title>\n</head>\n<body>\n    <h1>This is a cookieclicker. Cookies are gained by clicking the button. With these cookies, multipliers can be bought to gain even more cookies!\n    <br>Happy Clicking!</h1>\n    <div class=\"container\">\n        <div class=\"column\">\n            <h2> Counter</h2>\n            <p>You have </p>\n            <p id=\"score_display\">0</p>\n            <p> cookies!</p>\n            <button id=\"cookie\">I am a cookie!</button>\n        </div>\n        <div class=\"column\">\n            <h2> Multipliers</h2>\n            <p> These are the multipliers currently active.</p>\n        </div>\n        <div class=\"column\">\n            <h2> Store </h2>\n                <button id=\"purchase_multiplier\">10 cookies for a cursor</button>\n                <p>The cursor autoclicks every 10 seconds.</p>\n                <p id=\"purchase_display\"></p>\n                <button id=\"purchase_grandma\">100 cookies for a grandma</button>\n                <p>A grandma bakes 4 cookies per second.</p>\n                <button id=\"purchase_farm\">1000 cookies for a farm</button>\n                <p>Each farm produces 32 cookies per second.</p>\n        </div>\n    </div>\n      <script src=\"script.js\"></script>\n</body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	
++++ b/index.html	
+@@ -19,12 +19,15 @@
+         <div class="column">
+             <h2> Multipliers</h2>
+             <p> These are the multipliers currently active.</p>
++            <p class="solid"> 1 cursor is currently clicking cookies.</p>
++            <p class="solid">1 grandma is currently baking cookies.</p>
++            <p class="solid">1 farm is currently planting cookie-seeds.</p>
+         </div>
+         <div class="column">
+             <h2> Store </h2>
+                 <button id="purchase_multiplier">10 cookies for a cursor</button>
+-                <p>The cursor autoclicks every 10 seconds.</p>
+                 <p id="purchase_display"></p>
++                <p>The cursor autoclicks every 10 seconds.</p>
+                 <button id="purchase_grandma">100 cookies for a grandma</button>
+                 <p>A grandma bakes 4 cookies per second.</p>
+                 <button id="purchase_farm">1000 cookies for a farm</button>
+Index: stylesheet.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');\n\nbody {\n    font-family: 'Quicksand', sans-serif;\n}\n\nbutton {\n    display: inline-block;\n    padding: 15px 25px;\n    font-size: 24px;\n    cursor: pointer;\n    text-align: center;\n    text-decoration: none;\n    outline: none;\n    color: #fff;\n    background-color: indianred;\n    border: none;\n    border-radius: 15px;\n    box-shadow: 3px 9px #999;\n}\n\nbutton:hover {background-color: darkred}\n\nbutton:active {\n    background-color: darkred;\n    box-shadow: 0 5px #666;\n    transform: translateY(4px);\n}\n\nbutton.blue {\n    background-color: #393eb9;\n}\n\nbutton.blue:hover {background-color: darkblue}\n\nbutton.green {\n    background-color: #96cd5c;\n}\n\nbutton.green:hover {background-color: darkgreen}\n\n.container {\n    display: grid;\n    grid-template-columns: 400px 600px 400px;\n    text-align: center;\n\n\n}\n.column {\n    padding: 16px;\n    height: 750px;\n    margin: 5px;\n    background-color: #cccccc;\n}\nh1 {\n    text-align: center;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/stylesheet.css b/stylesheet.css
+--- a/stylesheet.css	
++++ b/stylesheet.css	
+@@ -45,13 +45,22 @@
+     text-align: center;
+ 
+ 
++
+ }
+ .column {
+     padding: 16px;
+     height: 750px;
+-    margin: 5px;
++    margin: 10px;
+     background-color: #cccccc;
++    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
++    border-radius: 10px;
+ }
+ h1 {
+     text-align: center;
++    color: dimgrey;
+ }
++p.solid {border-style: solid;
++    border-radius: 10px;
++    color: dimgrey;
++    padding: 16px;
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08052397-66b2-4420-a6b0-7610778b7214\" name=\"Changes\" comment=\"Added explanations\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n        <option value=\"CSS File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1zLoVWSuqom3GZliwS1s5hiokAq\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File\" value=\"GitIgnore\" />\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08052397-66b2-4420-a6b0-7610778b7214\" name=\"Changes\" comment=\"\" />\n      <created>1633936755485</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1633936755485</updated>\n      <workItem from=\"1633936757960\" duration=\"1563000\" />\n      <workItem from=\"1633938465437\" duration=\"3216000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"linked stylesheet\">\n      <created>1633939224296</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633939224297</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"added multipliers\">\n      <created>1633947578350</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633947578351</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"added multipliers\">\n      <created>1633953313136</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633953313138</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Added explanations\">\n      <created>1633956137730</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633956137731</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"linked stylesheet\" />\n    <MESSAGE value=\"added multipliers\" />\n    <MESSAGE value=\"Added explanations\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added explanations\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -7,6 +7,7 @@
+     <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="Added explanations">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -87,7 +88,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1633956137731</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Added explanations">
++      <created>1633957845692</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1633957845693</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
