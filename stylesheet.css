@@ -4,6 +4,9 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Quicksand', sans-serif;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: hidden;
 }
 
 button {
@@ -45,11 +48,14 @@ button.green:hover {background-color: darkgreen}
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
     text-align: center;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .column {
-    padding: 16px;
+    padding: 15px;
     min-height: 100vh;
+    max-width: 100vh;
     margin: 10px;
     background-color: #cccccc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -58,10 +64,11 @@ button.green:hover {background-color: darkgreen}
 h1, h3 {
     text-align: center;
     color: dimgrey;
+    font-size: 20px;
 }
 
 p.solid {border-style: solid;
-    padding: 16px;
+    padding: 10px 20px;
     border-radius: 10px;
     color: dimgrey;
 }
@@ -73,4 +80,18 @@ p.solid {border-style: solid;
     margin: 0 auto;
     position: fixed;
     pointer-events: none;
+}
+
+img {
+    max-height: 25px;
+    max-width: 25px;
+    float: left;
+    padding: 2px;
+    display:inline-block;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

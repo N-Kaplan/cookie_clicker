@@ -131,3 +131,6 @@ const buy_bonus = () => {
 (buttons)[3].addEventListener("click", buy_item.bind(null, buttons[3], display[3], information[2], 1000));
 (buttons)[4].addEventListener("click", buy_booster);
 (buttons)[5].addEventListener("click", buy_bonus);
+
+
+}
