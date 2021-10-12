@@ -89,6 +89,7 @@ const buy_booster = () => {
 }
 //create timer
 
+
 /*var timer = 30;
 var interval = setInterval(function() {
     counter--;
