@@ -41,7 +41,6 @@ button.green:hover {background-color: darkgreen}
 
 .container {
     display: grid;
-    /*grid-template-columns: 400px 600px 400px;*/
     grid-template-columns: 2fr 3fr 2fr;
     text-align: center;
 }
@@ -65,4 +64,11 @@ p.solid {border-style: solid;
     color: dimgrey;
 }
 
-
+.confetti{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    /*user-select: none;*/
+    pointer-events: none;
+}
