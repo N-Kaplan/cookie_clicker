@@ -94,10 +94,10 @@ let timer = setInterval(timer, 1000);
 const timer = setInterval(function(){
     if(timeleft <= 0){
         clearInterval(timer);
-        document.getElementById("bonus_display").innerHTML = "Finished";
+        document.getElementById("bonus_display").textContent = "Finished";
         buttons[5].textContent = "500 cookies for a bonus";
     } else {
-        document.getElementById("bonus_display").innerHTML = timeleft + " seconds remaining";
+        document.getElementById("bonus_display").textContent = timeleft + " seconds remaining";
     }
     timeleft -= 1;
 }, 1000)
