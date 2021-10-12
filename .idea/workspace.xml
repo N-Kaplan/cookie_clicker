@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="Added active multipliers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
-    </list>
+    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="Booster active" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +23,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1zLoVWSuqom3GZliwS1s5hiokAq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -96,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1633960098602</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Button update">
+      <created>1634025359128</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634025359138</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Button update">
+      <created>1634025382415</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634025382418</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Booster active">
+      <created>1634030250156</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634030250159</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +133,8 @@
     <MESSAGE value="added multipliers" />
     <MESSAGE value="Added explanations" />
     <MESSAGE value="Added active multipliers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added active multipliers" />
+    <MESSAGE value="Button update" />
+    <MESSAGE value="Booster active" />
+    <option name="LAST_COMMIT_MESSAGE" value="Booster active" />
   </component>
 </project>
