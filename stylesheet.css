@@ -43,10 +43,12 @@ button.green:hover {background-color: darkgreen}
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .column {
-    padding: 16px;
+    padding: 15px;
     min-height: 100vh;
     margin: 10px;
     background-color: #cccccc;
@@ -56,10 +58,11 @@ button.green:hover {background-color: darkgreen}
 h1 {
     text-align: center;
     color: dimgrey;
+    font-size: 20px;
 }
 
 p.solid {border-style: solid;
-    padding: 16px;
+    padding: 25px 20px;
     border-radius: 10px;
     color: dimgrey;
 }
@@ -71,4 +74,12 @@ p.solid {border-style: solid;
     position: absolute;
     /*user-select: none;*/
     pointer-events: none;
+}
+
+img {
+    max-height: 25px;
+    max-width: 25px;
+    float: left;
+    padding: 10px 2px;
+    display:inline-block;
 }

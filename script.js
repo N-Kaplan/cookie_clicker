@@ -90,14 +90,13 @@ const buy_booster = () => {
 
 //create timer
 const timeleft = 10;
-let timer = setInterval(timer, 1000);
 const timer = setInterval(function(){
     if(timeleft <= 0){
         clearInterval(timer);
-        document.getElementById("bonus_display").textContent = "Finished";
+        document.getElementById("bonus_display").innerHTML = "Finished";
         buttons[5].textContent = "500 cookies for a bonus";
     } else {
-        document.getElementById("bonus_display").textContent = timeleft + " seconds remaining";
+        document.getElementById("bonus_display").innerHTML = timeleft + " seconds remaining";
     }
     timeleft -= 1;
 }, 1000)
@@ -135,3 +134,6 @@ const buy_bonus = () => {
 (buttons)[3].addEventListener("click", buy_item.bind(null, buttons[3], display[3], information[2], 1000));
 (buttons)[4].addEventListener("click", buy_booster);
 (buttons)[5].addEventListener("click", buy_bonus);
+
+
+}
