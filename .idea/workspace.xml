@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="Added explanations">
+    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="Added active multipliers">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633956137731</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added active multipliers">
+      <created>1633960098597</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633960098602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +117,7 @@
     <MESSAGE value="linked stylesheet" />
     <MESSAGE value="added multipliers" />
     <MESSAGE value="Added explanations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added explanations" />
+    <MESSAGE value="Added active multipliers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added active multipliers" />
   </component>
 </project>

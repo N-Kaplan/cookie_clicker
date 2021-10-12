@@ -66,3 +66,6 @@ const buy_grandma = () => {
         }
         btn_m.addEventListener("click", buy_farm);
 }*/
+
+
+}());
