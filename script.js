@@ -87,41 +87,28 @@ const buy_booster = () => {
         display[4].textContent = 'bake more cookies first!'
     }
 }
+
 //create timer
+const timeleft = 10;
+let timer = setInterval(timer, 1000);
+const timer = setInterval(function(){
+    if(timeleft <= 0){
+        clearInterval(timer);
+        document.getElementById("bonus_display").textContent = "Finished";
+        buttons[5].textContent = "500 cookies for a bonus";
+    } else {
+        document.getElementById("bonus_display").textContent = timeleft + " seconds remaining";
+    }
+    timeleft -= 1;
+}, 1000)
 
-
-/*var timer = 30;
-var interval = setInterval(function() {
-    counter--;
-    if (timer <= 0) {
-        clearInterval(interval);
-        return;
-    }else{
-        console.log(timer);
-    }*/
-
-// const countdown = () => {
-//     if (time_left < 0) {
-//         clearInterval(timer);
-//         buttons[5].textContent = "500 cookies for a bonus";
-//     } else {
-//         time_left < 2 ? buttons[5].textContent = `${time_left} second to go!`: btn_o.textContent = `${time_left} seconds to go!`;
-//     }
-// }
-//
-// const time_left = 30;
-// let timer = setInterval(countdown, 1000);
-
-
-//const bonus = while (timer > 0) =>{
-//    click_worth *= 2;
-//    }
-//if (timer <= 0) {
-//    console.log(click_worth);
-//    }
-//}, 1000);
-    //todo: temporary doubling, while timer runs
-
+// todo: temporary doubling, while timer runs
+const bonus = while (timeleft > 0) =>{
+    click_worth *= 2;
+    }
+if (timeleft <= 0) {
+    console.log(click_worth);
+    }
 
 
 
