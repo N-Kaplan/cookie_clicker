@@ -131,3 +131,16 @@ const buy_bonus = () => {
 (buttons)[3].addEventListener("click", buy_item.bind(null, buttons[3], display[3], information[2], 1000));
 (buttons)[4].addEventListener("click", buy_booster);
 (buttons)[5].addEventListener("click", buy_bonus);
+
+
+(buttons)[1].addEventListener("click", showIcon(information[0]));
+(buttons)[2].addEventListener("click", showIcon(information[1]));
+(buttons)[3].addEventListener("click", showIcon(information[2]));
+(buttons)[4].addEventListener("click", showIcon(information[3]));
+(buttons)[5].addEventListener("click", showIcon(information[4]));
+
+function showIcon () {
+    information => style.visibility='visible';
+};
+
+

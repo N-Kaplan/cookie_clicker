@@ -87,7 +87,7 @@ img {
     max-width: 25px;
     float: left;
     padding: 2px;
-    display:inline-block;
+    visibility: hidden;
 }
 .centered {
     position: absolute;
