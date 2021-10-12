@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="icons multipliers added">
+    <list default="true" id="08052397-66b2-4420-a6b0-7610778b7214" name="Changes" comment="overflow x-axis hidden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       <updated>1633936755485</updated>
       <workItem from="1633936757960" duration="1563000" />
       <workItem from="1633938465437" duration="3216000" />
-      <workItem from="1634041905406" duration="4153000" />
+      <workItem from="1634041905406" duration="5570000" />
     </task>
     <task id="LOCAL-00001" summary="linked stylesheet">
       <created>1633939224296</created>
@@ -179,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634044954694</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="icons multipliers added">
+      <created>1634046154217</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634046154219</updated>
+    </task>
+    <task id="LOCAL-00019" summary="overflow x-axis hidden">
+      <created>1634046436359</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634046436362</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +221,7 @@
     <MESSAGE value="added bonus timer, not running yet" />
     <MESSAGE value="added bonus timer, not displaying yet" />
     <MESSAGE value="icons multipliers added" />
-    <option name="LAST_COMMIT_MESSAGE" value="icons multipliers added" />
+    <MESSAGE value="overflow x-axis hidden" />
+    <option name="LAST_COMMIT_MESSAGE" value="overflow x-axis hidden" />
   </component>
 </project>
