@@ -90,16 +90,16 @@ const buy_booster = () => {
 //create timer
 
 
-/*var timer = 30;
+const timer = 30;
 var interval = setInterval(function() {
     counter--;
     if (timer <= 0) {
         clearInterval(interval);
         return;
     }else{
-        console.log(timer);
-    }*/
-
+        time_left < 2 ? buttons[5].textContent = `${timer} second to go!`: btn_o.textContent = `${timer} seconds to go!`;
+    }
+    console.log(timer);
 // const countdown = () => {
 //     if (time_left < 0) {
 //         clearInterval(timer);
@@ -111,16 +111,17 @@ var interval = setInterval(function() {
 //
 // const time_left = 30;
 // let timer = setInterval(countdown, 1000);
+//
 
+// todo: temporary doubling, while timer runs
+const bonus = while (timer > 0) =>{
+    click_worth *= 2;
+    }
+if (timer <= 0) {
+    console.log(click_worth);
+    }
+}, 1000);
 
-//const bonus = while (timer > 0) =>{
-//    click_worth *= 2;
-//    }
-//if (timer <= 0) {
-//    console.log(click_worth);
-//    }
-//}, 1000);
-    //todo: temporary doubling, while timer runs
 
 
 
