@@ -9,7 +9,6 @@ const information = document.querySelectorAll(".solid");
 
 let score = parseInt(display[0].textContent);
 let click_worth = 1;
-console.log(score);
 
 //clicking the button adds cookies
 buttons[0].addEventListener("click", () => {
@@ -52,7 +51,6 @@ const buy_item = (button, dpl, info, time) => {
 
 const multiplier = () => {
     score++
-    console.log(score);
     display[0].textContent = score.toString();
 };
 
@@ -72,11 +70,8 @@ const buy_booster = () => {
         let min = parseInt(buttons[4].getAttribute('data-min'));
         min *= 2;
         buttons[4].setAttribute('data-min', min.toString());
-
         buttons[4].textContent = `${min} cookies for a booster`
         display[4].textContent = `Each click is now worth ${click_worth} cookies!`;
-
-        console.log(min);
 
         //display in info section
         information[3].textContent = `One click is currently worth ${click_worth} cookies.`
@@ -98,9 +93,8 @@ const buy_bonus = () => {
         let start_timer = null;
 
         //create countdown
-        let clock = 5;
+        let clock = 30;
         click_worth *=2;
-        console.log(click_worth);
         const countdown = () => {
             if (clock > 0) {
                 clock--;
@@ -109,17 +103,18 @@ const buy_bonus = () => {
             } else {
                 buttons[5].textContent = "500 cookies for a bonus";
                 click_worth /=2;
-                console.log(click_worth);
                 //stop countdown
                 clearInterval(start_timer);
                 information[4].textContent = "No bonus is currently running.";
                 display[5].textContent = "You don't have a bonus running...";
+                //enable bonus purchase button once the clock runs out
+                buttons[5].disabled = false;
             }
         };
-
         //start countdown
         start_timer = setInterval(countdown, 1000);
-
+        //disable bonus purchase button after purchase
+        buttons[5].disabled = true;
 
     } else {
         display[5].textContent = 'bake more cookies first!'

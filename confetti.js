@@ -106,7 +106,6 @@ render();
 //i starts at 1 to exclude the cookie button
 for (let i = 1;i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
-        console.log(buttons[i]);
         initConfetti();
     });
 }
