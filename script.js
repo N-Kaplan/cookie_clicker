@@ -86,7 +86,6 @@ const buy_booster = () => {
     }
 }
 
-//while the clock runs, each click is worth double
 const buy_bonus = () => {
     if (score >= buttons[5].getAttribute('data-min')) {
         score -= buttons[5].getAttribute('data-min');
