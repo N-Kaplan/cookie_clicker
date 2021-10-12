@@ -89,6 +89,16 @@ const buy_booster = () => {
 }
 //create timer
 
+var timer = 30;
+var interval = setInterval(function() {
+    counter--;
+    if (timer <= 0) {
+        clearInterval(interval);
+        return;
+    }else{
+        console.log(timer);
+    }
+
 // const countdown = () => {
 //     if (time_left < 0) {
 //         clearInterval(timer);
@@ -101,11 +111,18 @@ const buy_booster = () => {
 // const time_left = 30;
 // let timer = setInterval(countdown, 1000);
 
-const bonus = () => {
+
+//const bonus = while (timer > 0) =>{
+//    click_worth *= 2;
+//    }
+//if (timer <= 0) {
+//    console.log(click_worth);
+//    }
+//}, 1000);
     //todo: temporary doubling, while timer runs
-    click_worth *= 2;
-    console.log(click_worth);
-}
+
+
+
 
 //each purchase of a booster increases the click worth by one
 //the price of each consecutive booster is doubled
