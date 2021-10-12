@@ -41,13 +41,13 @@ button.green:hover {background-color: darkgreen}
 
 .container {
     display: grid;
-    grid-template-columns: 400px 600px 400px;
+    grid-template-columns: 2fr 3fr 2fr;
     text-align: center;
-
 }
+
 .column {
     padding: 16px;
-    height: 600px;
+    min-height: 100vh;
     margin: 10px;
     background-color: #cccccc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -64,4 +64,11 @@ p.solid {border-style: solid;
     color: dimgrey;
 }
 
-
+.confetti{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    /*user-select: none;*/
+    pointer-events: none;
+}
