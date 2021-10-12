@@ -72,6 +72,5 @@ p.solid {border-style: solid;
     display: block;
     margin: 0 auto;
     position: fixed;
-    /*user-select: none;*/
     pointer-events: none;
 }
