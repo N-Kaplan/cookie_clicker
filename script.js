@@ -114,12 +114,14 @@ const buy_bonus = () => {
                 clearInterval(start_timer);
                 information[4].textContent = "No bonus is currently running.";
                 display[5].textContent = "You don't have a bonus running...";
+                //enable bonus purchase button once the clock runs out
+                buttons[5].disabled = false;
             }
         };
-
         //start countdown
         start_timer = setInterval(countdown, 1000);
-
+        //disable bonus purchase button after purchase
+        buttons[5].disabled = true;
 
     } else {
         display[5].textContent = 'bake more cookies first!'
