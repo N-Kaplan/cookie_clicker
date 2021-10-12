@@ -1,46 +1,60 @@
-const btn_c = document.getElementById("cookie");
-const display_score = document.getElementById('score_display');
-const btn_m = document.getElementById("purchase_cursor");
-const display_cursor = document.getElementById("cursor_display");
-const btn_g = document.getElementById("purchase_grandma");
-const display_grandma = document.getElementById("grandma_display");
-const btn_f = document.getElementById("purchase_farm");
-const display_farm = document.getElementById("farm_display");
-const btn_b = document.getElementById("purchase_booster");
-const display_booster = document.getElementById("booster_display");
+//buttons: cookie, cursor, grandma, farm, booster, bonus
+const buttons = document.getElementsByTagName("BUTTON");
 
-let score = parseInt(display_score.textContent);
+//display: score, cursor, grandma, farm, booster, bonus
+const display = document.querySelectorAll(".display");
+
+//info: cursor, grandma, farm, booster, bonus
+const information = document.querySelectorAll(".solid");
+
+let score = parseInt(display[0].textContent);
 let click_worth = 1;
 console.log(score);
 
-btn_c.addEventListener("click", () => {
+//clicking the button adds cookies
+buttons[0].addEventListener("click", () => {
     score += click_worth;
-    display_score.textContent = score.toString();
+    display[0].textContent = score.toString();
     console.log(click_worth);
 })
 
+//indicators for cursors, farms and grandmas
+let cursors = 0;
+let grandmas = 0;
+let farms = 0;
 
-const buy_item = (button, display, time) => {
+//buying items, either cursors, grandmas and farms
+const buy_item = (button, dpl, info, time) => {
     if (score >= button.getAttribute('data-min')) {
         score -= button.getAttribute('data-min');
-        display_score.textContent = score.toString();
+        display[0].textContent = score.toString();
         setInterval(multiplier, time);
-        display.textContent = 'item purchased';
-        button.removeEventListener('click', buy_item);
+        dpl.textContent = 'item purchased';
+
+        //adjust indicator number of cursors, grandmas or farms in the info section, taking grammar into account
+        switch (info) {
+            case information[0]:
+                cursors++;
+                cursors < 2 ? info.textContent = `${cursors} cursor is currently autoclicking cookies.` : info.textContent = `${cursors} cursors are currently autoclicking cookies.`;
+                break;
+            case information[1]:
+                grandmas++;
+                grandmas < 2 ? info.textContent = `${grandmas} grandma is currently baking cookies.`: info.textContent = `${grandmas} grandmas are currently baking cookies.`;
+                break;
+            case information[2]:
+                farms++;
+                farms < 2 ? info.textContent = `${farms} farm is currently planting cookie-seeds.`: info.textContent = `${farms} farms are currently planting cookie-seeds.`;
+                break;
+        }
     } else {
-        display.textContent = 'bake more cookies first!'
+        dpl.textContent = 'bake more cookies first!'
     }
 }
-
-
-// const test = () => {
-//     console.log('test')
-// }
 
 const multiplier = () => {
     score++
     console.log(score);
-    display_score.textContent = score.toString();
+    display[0].textContent = score.toString();
 };
 
 //one click is worth the specified number of cookies
@@ -52,25 +66,67 @@ const booster = () => {
 //each purchase of a booster increases the click worth by one
 //the price of each consecutive booster is doubled
 const buy_booster = () => {
-    if (score >= btn_b.getAttribute('data-min')) {
-        score -= btn_b.getAttribute('data-min');
-        display_score.textContent = score.toString();
+    if (score >= buttons[4].getAttribute('data-min')) {
+        score -= buttons[4].getAttribute('data-min');
+        display[0].textContent = score.toString();
         booster();
 
-        let min = parseInt(btn_b.getAttribute('data-min'));
+        let min = parseInt(buttons[4].getAttribute('data-min'));
         min *= 2;
-        btn_b.setAttribute('data-min', min.toString());
+        buttons[4].setAttribute('data-min', min.toString());
 
-        btn_b.textContent = `${min} cookies for a booster`
-        display_booster.textContent = `Each click is now worth ${click_worth} cookies!`;
+        buttons[4].textContent = `${min} cookies for a booster`
+        display[4].textContent = `Each click is now worth ${click_worth} cookies!`;
 
         console.log(min);
+
+        //display in info section
+        information[3].textContent = `One click is currently worth ${click_worth} cookies.`
+
     } else {
-        display_booster.textContent = 'bake more cookies first!'
+        display[4].textContent = 'bake more cookies first!'
+    }
+}
+//create timer
+
+// const countdown = () => {
+//     if (time_left < 0) {
+//         clearInterval(timer);
+//         buttons[5].textContent = "500 cookies for a bonus";
+//     } else {
+//         time_left < 2 ? buttons[5].textContent = `${time_left} second to go!`: btn_o.textContent = `${time_left} seconds to go!`;
+//     }
+// }
+//
+// const time_left = 30;
+// let timer = setInterval(countdown, 1000);
+
+const bonus = () => {
+    //todo: temporary doubling, while timer runs
+    click_worth *= 2;
+    console.log(click_worth);
+}
+
+//each purchase of a booster increases the click worth by one
+//the price of each consecutive booster is doubled
+const buy_bonus = () => {
+    if (score >= buttons[5].getAttribute('data-min')) {
+        score -= buttons[5].getAttribute('data-min');
+        display[0].textContent = score.toString();
+        bonus();
+
+        //code
+
+        //display in info section
+        info_o.textContent = `200% bonus active!`
+
+    } else {
+        display_bonus.textContent = 'bake more cookies first!'
     }
 }
 
-btn_m.addEventListener("click", buy_item.bind(null, btn_m, display_cursor, 10000));
-btn_g.addEventListener("click", buy_item.bind(null, btn_g, display_grandma, 6000));
-btn_f.addEventListener("click", buy_item.bind(null, btn_f, display_farm, 2000));
-btn_b.addEventListener("click", buy_booster);
+(buttons)[1].addEventListener("click", buy_item.bind(null, buttons[1], display[1], information[0], 10000));
+(buttons)[2].addEventListener("click", buy_item.bind(null, buttons[2], display[2], information[1], 5000));
+(buttons)[3].addEventListener("click", buy_item.bind(null, buttons[3], display[3], information[2], 1000));
+(buttons)[4].addEventListener("click", buy_booster);
+(buttons)[5].addEventListener("click", buy_bonus);

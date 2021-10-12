@@ -6,22 +6,25 @@
     <title>Cookie clicker</title>
 </head>
 <body>
-    <h1>This is a cookieclicker. Cookies are gained by clicking the button. With these cookies, multipliers can be bought to gain even more cookies!
+    <h1>This is a cookieclicker.<br>
+        Cookies are gained by clicking the button. With these cookies, multipliers can be bought to gain even more cookies!
     <br>Happy Clicking!</h1>
     <div class="container">
         <div class="column">
             <h2> Counter</h2>
             <p>You have </p>
-            <p id="score_display">0</p>
+            <p id="score_display" class="display">15000</p>
             <p> cookies!</p>
             <button id="cookie">I am a cookie!</button>
         </div>
         <div class="column">
             <h2> Multipliers</h2>
             <p> These are the multipliers currently active.</p>
-            <p class="solid">1 cursor is currently clicking cookies.</p>
-            <p class="solid">1 grandma is currently baking cookies.</p>
-            <p class="solid">1 farm is currently planting cookie-seeds.</p>
+            <p class="solid" id="cursor_info">No cursor is currently autoclicking cookies.</p>
+            <p class="solid" id="grandma_info">No grandma is currently baking cookies.</p>
+            <p class="solid" id="farm_info">No farm is currently planting cookie-seeds.</p>
+            <p class="solid" id="booster_info">One click is currently worth 1 cookie.</p>
+            <p class="solid" id="bonus_info">No bonus is currently running.</p>
         </div>
         <div class="column">
             <h2> Store </h2>
@@ -29,14 +32,16 @@
                 <br>Grandma: a nice grandma to bake more cookies.
                 <br>Farm: grows cookieplants from cookieseeds.
             </p>
-            <button id="purchase_cursor" data-min="10" class="cursor">10 cookies for a cursor</button>
-            <p id="cursor_display" class="cursor">You don't have a cursor yet...</p>
+            <button id="purchase_cursor" data-min="10">10 cookies for a cursor</button>
+            <p id="cursor_display" class="display">You don't have a cursor yet...</p>
             <button id="purchase_grandma" data-min="100">100 cookies for a grandma</button>
-            <p id="grandma_display">You don't have a grandma yet...</p>
+            <p id="grandma_display" class="display">You don't have a grandma yet...</p>
             <button id="purchase_farm" data-min="1000">1000 cookies for a farm</button>
-            <p id="farm_display">You don't have a farm yet...</p>
+            <p id="farm_display" class="display">You don't have a farm yet...</p>
             <button id="purchase_booster" data-min="200">200 cookies for a booster</button>
-            <p id="booster_display">You don't have a booster yet...</p>
+            <p id="booster_display" class="display">You don't have a booster yet...</p>
+            <button id="purchase_bonus" data-min="500">500 cookies for a bonus</button>
+            <p id="bonus_display" class="display">You don't have a bonus yet...</p>
 
         </div>
     </div>
